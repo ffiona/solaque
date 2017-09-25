@@ -1,6 +1,6 @@
 <?php 
 
-    $to = "email@example.com";
+    $to = "fionaaya@gmail.com";
     $email = $_POST['Email'];
     $subject = "Form submission";
     $headers = "From:";
