@@ -5,6 +5,13 @@
         // Get the form fields and remove whitespace.
         $email = $_POST["Email"];
 
+        // Check that data was sent to the mailer.
+        if ( empty($email)) {
+            // Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            exit;
+        }
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
